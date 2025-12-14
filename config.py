@@ -7,9 +7,7 @@ import os
 
 @dataclass
 class BaseConfig:
-    _dtype: torch.dtype = field(
-        default=torch.float32, metadata={"help": "data type"}
-    )  # WARN: Dtype Changed
+    _dtype: torch.dtype = field(default=torch.float32, metadata={"help": "data type"})
     data: str = field(
         default="wv3_reduced",
         metadata={
