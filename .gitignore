@@ -1,0 +1,7 @@
+test_data/
+*/__pycache__
+test_results/
+Results/
+__pycache__/
+Paper/
+!Paper/Results/WV3_Reduced/Ours.mat
