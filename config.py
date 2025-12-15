@@ -19,8 +19,6 @@ class BaseConfig:
                 "wv3_origscale",
                 "qb_reduced",
                 "qb_origscale",
-                "gf2_reduced",
-                "gf2_origscale",
             ],
         },
     )
@@ -66,14 +64,6 @@ class BaseConfig:
             "wv3_reduced": ("./test_data/test_wv3_Reduced.h5", 256, "WV3", 8, 2047.0),
             "qb_reduced": ("./test_data/test_qb_Reduced.h5", 256, "QB", 4, 2047.0),
             "qb_origscale": ("./test_data/test_qb_OrigScale.h5", 512, "QB", 4, 2047.0),
-            "gf2_reduced": ("./test_data/test_gf2_Reduced.h5", 256, "QB", 4, 2047.0),
-            "gf2_origscale": (
-                "./test_data/test_gf2_OrigScale.h5",
-                512,
-                "QB",
-                4,
-                2047.0,
-            ),
         }
         self.test_path, self.test_sidelen, self.sensor, self.channel, self.max_value = (
             config_map[self.data]
